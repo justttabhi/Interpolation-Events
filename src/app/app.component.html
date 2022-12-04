@@ -1,0 +1,29 @@
+<!-- Interpolation: Dynamic Value -->
+<h2>This is {{title}}</h2>
+<p>{{data}}</p>
+<p>{{2022}}</p>
+<p>{{'this is string'}}</p>
+<p>Name length: {{n.length}}</p>
+<p>{{2+2}}</p>
+
+<!-- Events -->
+<h2>Events</h2>
+<button (click)="get()">Call Function</button><br><br>
+<input type="text" (keyup)="getdata('box')" placeholder="event keyup"><br>
+<!-- <input type="text" #box (keyup)="getdata(box.value)" placeholder="event keyup"><br> -->
+<!-- <input type="text" #box (keydown)="getdata(box.value)" placeholder="event keydown"><br> -->
+<!-- <input type="text" #box (blur)="getdata(box.value)" placeholder="event blur"><br> -->
+
+<h3 (mouseover)="cal()">Sachin</h3>
+
+
+
+
+
+<!-- Get input Box value and display -->
+<h2> Get input Box value and display</h2>
+<input type="text" #boxval (blur)="getVal(boxval.value)" placeholder="Enter Name">
+<p>Display Value: {{displayVal}}</p>
+
+<input type="text" #boxval (blur)="getAttributeVal(boxval.placeholder)" placeholder="Enter Name">
+<p>Display placeholder attribute: {{displayAttributeVal}}</p>
